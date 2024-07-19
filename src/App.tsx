@@ -1,4 +1,4 @@
-import { createContext, Dispatch, SetStateAction, useState } from 'react'
+import {createContext, Dispatch, SetStateAction, useState} from 'react'
 import Level1 from './components/Level1.tsx'
 import Second from './components/Second.tsx'
 
@@ -8,7 +8,8 @@ export const PropContext = createContext({
 
 export const SecondContext = createContext({
     secondValue: '',
-    setSecondValue: (() => {}) as Dispatch<SetStateAction<string>>
+    setSecondValue: (() => {
+    }) as Dispatch<SetStateAction<string>>
 })
 
 const App = () => {
@@ -16,12 +17,12 @@ const App = () => {
     const [secondValue, setSecondValue] = useState('Second value')
 
     return (
-        <PropContext.Provider value={{ value: propValue }}>
-            <SecondContext.Provider value={{ secondValue, setSecondValue }}>
+        <PropContext.Provider value={{value: propValue}}>
+            <SecondContext.Provider value={{secondValue, setSecondValue}}>
                 <div className="container col-4">
                     <h1>React Context Example</h1>
-                    <Level1 />
-                    <Second />
+                    <Level1/>
+                    <Second/>
                 </div>
             </SecondContext.Provider>
         </PropContext.Provider>

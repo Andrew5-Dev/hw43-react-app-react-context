@@ -1,9 +1,9 @@
-import { useContext } from 'react'
-import { PropContext, SecondContext } from '../App.tsx'
+import {useContext} from 'react'
+import {PropContext, SecondContext} from '../App.tsx'
 
 const Level3 = () => {
-    const { value } = useContext(PropContext)
-    const { secondValue, setSecondValue } = useContext(SecondContext)
+    const {value} = useContext(PropContext)
+    const {secondValue, setSecondValue} = useContext(SecondContext)
 
     const handleChange = () => {
         setSecondValue(secondValue === 'New second value' ? 'Another value for second' : 'New second value')

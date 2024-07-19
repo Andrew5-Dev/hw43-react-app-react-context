@@ -1,4 +1,4 @@
-import { PropContext } from '../App.tsx'
+import {PropContext} from '../App.tsx'
 import Level2 from './Level2.tsx'
 
 const Level1 = () => {
@@ -9,12 +9,12 @@ const Level1 = () => {
                     return <p>Помилка передачі контексту</p>
                 }
 
-                const { value } = consumerValue
+                const {value} = consumerValue
 
                 return (
                     <>
                         <h1>Level 1: {value}</h1>
-                        <Level2 />
+                        <Level2/>
                     </>
                 )
             }}

@@ -1,8 +1,8 @@
-import { useContext, useEffect } from 'react'
-import { SecondContext } from '../App.tsx'
+import {useContext, useEffect} from 'react'
+import {SecondContext} from '../App.tsx'
 
 const Second = () => {
-    const { secondValue, setSecondValue } = useContext(SecondContext)
+    const {secondValue, setSecondValue} = useContext(SecondContext)
 
     useEffect(() => {
         setSecondValue('Second value from Second.tsx')
@@ -10,7 +10,7 @@ const Second = () => {
 
     return (
         <div>
-            <h2 style={{ color: 'orange' }}>Second: {secondValue}</h2>
+            <h2 style={{color: 'orange'}}>Second: {secondValue}</h2>
         </div>
     )
 }
